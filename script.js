@@ -10,5 +10,6 @@ function adicionarTarefa(){
     }
 }
 
-console.log(novaTarefa)
-
+console.log(novaTarefa.titulo_tarefa)
+console.log(novaTarefa.data_tarefa)
+console.log(novaTarefa.urgencia_tarefa)
