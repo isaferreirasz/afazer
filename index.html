@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="Tarefas">
-        <h1> Tarefas </h1>
+    
     </div>
 
     <div class="adicionar_tarega">
@@ -18,11 +18,15 @@
             <label for="data-tarefa">Data da tarefa</label>
             <input type="date" name="data-tarefa" id="data-tarefa">
 
-            <label for="Urgencia-tarefa">É uma tarefa urgente?</label>
-            <input type="checkbox" name="urgencia-tarefa" id="urgencia-tarefa">
-            
-            <input type="button" value="Adicionar tarefa">
-        </form>
+            <label for="Urgencia-tarefa">Urgência da tarefa:</label>
+            <select id="urgencia-tarefa" required>
+                <option value="baixa">Baixa</option>
+                <option value="normal">Normal</option>
+                <option value="urgente">Urgente</option>
+            </select>
+
+            <button type="submit" onclick="adicionarTarefa()">Adicionar Tarefa</button>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
