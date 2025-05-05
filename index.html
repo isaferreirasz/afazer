@@ -6,26 +6,33 @@
     <title>To do - list </title>
 </head>
 <body>
-    <div class="Tarefas">
-    
-    </div>
+  
 
     <div class="adicionar_tarega">
-        <form>
+        <form action="" method="post" id="adicionar-tarefa">
+            <div>
             <label for="titulo-tarefa">Título da tarefa: </label>
             <input type="tel" name="titulo-tarefa" id="titulo-tarefa">
-
+            </div>
+            <div>
             <label for="data-tarefa">Data da tarefa</label>
             <input type="date" name="data-tarefa" id="data-tarefa">
-
+</div>
+<div>
             <label for="Urgencia-tarefa">Urgência da tarefa:</label>
             <select id="urgencia-tarefa" required>
                 <option value="baixa">Baixa</option>
                 <option value="normal">Normal</option>
                 <option value="urgente">Urgente</option>
             </select>
-
-            <button type="submit" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        </div>
+<div>
+    <button type="submit" id="enviar">Adicionar Tarefa</button>
+</div>
+           
+    </div>
+    <div id="tarefas">
+   <h1>Tarefas adicionadas: </h1>
     </div>
 </body>
 <script src="script.js"></script>
